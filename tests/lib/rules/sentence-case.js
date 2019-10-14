@@ -39,13 +39,16 @@ ruleTester.run("sentence-case", rule, {
       code: "'snake_case'",
     },
     {
-      code: ""'lowerCamelCase'",
+      code: "'lowerCamelCase'",
     },
     {
       code: "authState === 'signedIn';",
     },
     {
       code: "'UpperCamelCase'",
+    },
+    {
+      code: "'handles UI events'",
     },
     {
       code: "'This sentence has a proper noun and it is New York City.'",
