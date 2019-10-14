@@ -32,6 +32,18 @@ ruleTester.run("sentence-case", rule, {
     {
       code: "<TextInput placeholder=\"A sentence case prop\" />",
     },
+    {
+      code: "'ALL UPPERCASE'",
+    },
+    {
+      code: "'CamelCase'",
+    },
+    {
+      code: "'This sentence has a proper noun and it is New York City.'",
+    },
+    {
+      code: "'One sentence. Two sentence. Three sentence.'",
+    },
   ],
 
   invalid: [
@@ -47,5 +59,9 @@ ruleTester.run("sentence-case", rule, {
       code: "<Text>A Title Case String</Text>",
       errors: [{}],
     },
+    {
+      code: "'Title Case and a Couple Lowercase Words'",
+      errors: [{}],
+    }
   ]
 });
