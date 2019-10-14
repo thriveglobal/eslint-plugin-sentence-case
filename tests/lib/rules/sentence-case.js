@@ -4,34 +4,48 @@
  */
 "use strict";
 
-//------------------------------------------------------------------------------
-// Requirements
-//------------------------------------------------------------------------------
-
 var rule = require("../../../lib/rules/sentence-case"),
+  RuleTester = require("eslint").RuleTester;
 
-    RuleTester = require("eslint").RuleTester;
-
-
-//------------------------------------------------------------------------------
-// Tests
-//------------------------------------------------------------------------------
+RuleTester.setDefaultConfig({
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+    },
+  }
+});
 
 var ruleTester = new RuleTester();
 ruleTester.run("sentence-case", rule, {
 
-    valid: [
+  valid: [
+    {
+      code: "'A sentence case literal'",
+    },
+    {
+      code: "'lowercase-string'",
+    },
+    {
+      code: "<Text>A sentence case string</Text>",
+    },
+    {
+      code: "<TextInput placeholder=\"A sentence case prop\" />",
+    },
+  ],
 
-        // give me some code that won't trigger a warning
-    ],
-
-    invalid: [
-        {
-            code: "'A Title Case Literal'",
-            errors: [{
-                message: "Fill me in.",
-                type: "Me too"
-            }]
-        }
-    ]
+  invalid: [
+    {
+      code: "'A Title Case Literal'",
+      errors: [{}],
+    },
+    {
+      code: "<TextInput placeholder=\"a Title Case Prop\" />",
+      errors: [{}],
+    },
+    {
+      code: "<Text>A Title Case String</Text>",
+      errors: [{}],
+    },
+  ]
 });

@@ -1,4 +1,4 @@
-# Enforce that string literals are in sentence case. (sentence-case)
+# Enforce that string literals are in sentence case (sentence-case)
 
 ## Rule Details
 
