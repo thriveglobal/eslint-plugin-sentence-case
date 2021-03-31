@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sentence-case",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Enforce that string literals are in sentence case.",
   "keywords": [
     "eslint",
