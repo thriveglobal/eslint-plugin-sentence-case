@@ -1,26 +1,23 @@
 {
-  "name": "eslint-plugin-sentence-case",
-  "version": "0.0.6",
-  "description": "Enforce that string literals are in sentence case.",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
-  "author": "Cassidy Laidlaw",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "mocha tests --recursive"
-  },
-  "dependencies": {
-    "requireindex": "~1.1.0"
-  },
-  "devDependencies": {
-    "eslint": "~4.18.2",
-    "mocha": "^3.1.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "license": "ISC"
+    "name": "eslint-plugin-sentence-case",
+    "version": "0.0.6",
+    "description": "Enforce that string literals are in sentence case.",
+    "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
+    "author": "Cassidy Laidlaw",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "mocha tests --recursive",
+        "test:watch": "npm run test -- --watch"
+    },
+    "dependencies": {
+        "requireindex": "~1.1.0"
+    },
+    "devDependencies": {
+        "eslint": "~4.18.2",
+        "mocha": "^3.1.2"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "license": "ISC"
 }
