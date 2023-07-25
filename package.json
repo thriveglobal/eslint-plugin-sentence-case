@@ -2,7 +2,11 @@
     "name": "eslint-plugin-sentence-case",
     "version": "0.0.6",
     "description": "Enforce that string literals are in sentence case.",
-    "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
     "author": "Cassidy Laidlaw",
     "main": "dist/index.js",
     "scripts": {
@@ -10,6 +14,7 @@
         "test:watch": "npm run test -- --watch"
     },
     "dependencies": {
+        "@typescript-eslint/parser": "^6.2.0",
         "requireindex": "~1.1.0"
     },
     "devDependencies": {
