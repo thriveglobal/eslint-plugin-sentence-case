@@ -62,7 +62,7 @@ ruleTester.run('sentence-case', rule, {
             code: "'Get started on your Journey.'"
         },
         {
-            code: "'Today's Reset.'"
+            code: "`Today's Reset.`"
         }
     ],
 
