@@ -56,13 +56,17 @@ ruleTester.run('sentence-case', rule, {
             code: "'One sentence. Two sentence. Three sentence.'"
         },
         {
-            code: "import { FC } from 'react'"
+            code: "import { FC } from 'react'",
+            parserOptions: { ecmaVersion: 2015, sourceType: 'module' }
         },
         {
             code: "'Get started on your Journey.'"
         },
         {
-            code: "`Today's Reset.`"
+            code: "'Watch a Reset'"
+        },
+        {
+            code: "'Choose Microsteps'"
         }
     ],
 
