@@ -56,6 +56,9 @@ ruleTester.run("sentence-case", rule, {
     {
       code: "'One sentence. Two sentence. Three sentence.'",
     },
+    {
+      code: "import { FC } from 'react'",
+    }
   ],
 
   invalid: [
