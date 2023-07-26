@@ -56,7 +56,7 @@ ruleTester.run('sentence-case', rule, {
             code: "'One sentence. Two sentence. Three sentence.'"
         },
         {
-            code: "import { FC } from 'react'",
+            code: "import { FC, React } from 'react'",
             parserOptions: { ecmaVersion: 2015, sourceType: 'module' }
         },
         {
