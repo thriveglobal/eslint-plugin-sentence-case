@@ -24,5 +24,11 @@
     "engines": {
         "node": "^18"
     },
-    "license": "ISC"
+    "license": "ISC",
+    "eslintConfig": {
+        "env": {
+            "node": true,
+			"es6": true 
+        }
+    }
 }

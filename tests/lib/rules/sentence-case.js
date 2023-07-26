@@ -67,6 +67,9 @@ ruleTester.run('sentence-case', rule, {
         },
         {
             code: "'Choose Microsteps'"
+        },
+        {
+            code: "'Sample'"
         }
     ],
 
