@@ -1,7 +1,7 @@
 {
     "name": "eslint-plugin-sentence-case",
-    "version": "0.0.6",
-    "description": "Enforce that string literals are in sentence case.",
+    "version": "1.0.0",
+    "description": "Enforce that string literals are in sentence case with Thrive guidelines.",
     "keywords": [
         "eslint",
         "eslintplugin",

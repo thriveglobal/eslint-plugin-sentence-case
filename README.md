@@ -1,37 +1,12 @@
 # eslint-plugin-sentence-case
 
-Enforce that string literals are in sentence case.
+Enforce that string literals are in sentence case, with exceptions for "Thrive" words.
 
-## Installation
+## Installation + usage
 
-You'll first need to install [ESLint](http://eslint.org):
+`sentence-case` is included as part of [the Leafkit shared linter configuration](https://github.com/thriveglobal/thrive-web-leafkit/tree/staging/configs).
 
-```
-$ npm i eslint --save-dev
-```
-
-Next, install `eslint-plugin-sentence-case`:
-
-```
-$ npm install eslint-plugin-sentence-case --save-dev
-```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-sentence-case` globally.
-
-## Usage
-
-Add `sentence-case` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-
-```json
-{
-    "plugins": [
-        "sentence-case"
-    ]
-}
-```
-
-
-Then configure the rules you want to use under the rules section.
+You can configure the rules you want to use under the rules section.
 
 ```json
 {
@@ -41,6 +16,10 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+## Supported rules
 
-* [`sentence-case`](docs/rules/sentence-case.md)
+-   [`sentence-case`](docs/rules/sentence-case.md)
+
+## Word bank
+
+Our excludelist of Thrive words was last updated Aug 2023 from this [document](https://docs.google.com/spreadsheets/d/1UNIgc6TgIP8RXpXzCkqiZugLJkXysebI/edit#gid=656893934).
