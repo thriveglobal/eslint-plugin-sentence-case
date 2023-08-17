@@ -70,6 +70,10 @@ ruleTester.run('sentence-case', rule, {
         },
         {
             code: "'Sample'"
+        },
+        {
+            code: "'Thrive Calls'",
+            options: [{ phraseBank: ['Calls'] }]
         }
     ],
 

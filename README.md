@@ -11,7 +11,7 @@ You can configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "sentence-case/rule-name": 2
+        "@thriveglobal/sentence-case/sentence-case": 2
     }
 }
 ```
